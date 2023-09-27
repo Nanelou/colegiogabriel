@@ -21,13 +21,22 @@
         text-align: center;
         padding: 20px;
 
-   img { 
+   .img { 
     position: absolute; /* Define a imagem como posicionamento absoluto em relação ao corpo. */
             top: 50%; /* Move a parte superior da imagem para o centro vertical. */
             left: 50%; /* Move a parte esquerda da imagem para o centro horizontal. */
             transform: translate(-50%, -50%); /* Move a imagem de volta em 50% da sua própria largura e altura para centralizá-la. */
             max-width: 100%; /* Garante que a imagem não ultrapasse a largura do corpo. */
             max-height: 100%; /* Garante que a imagem não ultrapasse a altura do corpo. */
+        }
+        .texto-sobreposto {
+            position: absolute;
+            top: 50%; /* Define a posição vertical do texto */
+            left: 50%; /* Define a posição horizontal do texto */
+            transform: translate(-50%, -50%); /* Centraliza o texto horizontal e verticalmente */
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
+            color: #fff; /* Cor do texto */
+            padding: 10px; /* Espaçamento interno do texto */
         }
    
     
@@ -58,8 +67,11 @@
 
     <div class="container">
         <div class="section">
-            <h2>O que é o Setembro Amarelo?</h2>
+          
+            <img class="imagem-de-fundo" src="img/set.jpg" alt="Imagem de Fundo">
+        <div class="texto-sobreposto">
             <img src="img/set.jpg"alt="setembro amarelo">
+            <h2>O que é o Setembro Amarelo?</h2>
             <p>O Setembro Amarelo é uma campanha de conscientização sobre a prevenção do suicídio. Ele visa alertar a sociedade sobre a importância de cuidar da saúde mental e oferecer apoio a quem precisa.</p>
         </div>
 
